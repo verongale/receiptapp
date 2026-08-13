@@ -1,6 +1,7 @@
+import { CreateReceiptInput } from "@/types/CreateReceiptInput";
 import { Receipt } from "@/types/receipt";
 
-export async function createReceipt(receipt : Receipt){
+export async function createReceipt(receipt : CreateReceiptInput){
     const response = await fetch("/api/receipts", {
         method: "POST",
         headers: {

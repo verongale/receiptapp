@@ -1,11 +1,12 @@
 import { prisma } from "@/lib/prisma";
+import { CreateReceiptInput } from "@/types/CreateReceiptInput";
 import { NextResponse } from "next/server";
 
 
 
 export async function POST(request: Request){
     try{
-    const body = await request.json();
+    const body : CreateReceiptInput = await request.json();
     console.log("Ricevuto nuovo scontrino:", body);
     const receipt = await prisma.receipt.create({
         data : {

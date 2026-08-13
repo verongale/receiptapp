@@ -1,26 +1,11 @@
 
 import {prisma} from "@/lib/prisma";
+import { UpdateReceiptInput } from "@/types/UpdateReceiptInput";
 import { NextResponse } from "next/server";
 
-/*export async function GET( request: Request , {params}: {params: Promise<{id : string}>}) {
-       const {id} = await params; 
-    const receipt = await prisma.receipt.findUnique({
-            where: {
-                id: Number(id)
-            },
-            include: {
-                products: true
-            }
-        });
-        if (!receipt){
-            return NextResponse.json({message: "Receipt not found"}, {status: 404});
-        }
-        return NextResponse.json(receipt);
-
-}*/
 export async function PUT(request: Request, {params} : {params : Promise<{id : string}>}){
    try { const {id} = await params; 
-    const body = await request.json(); 
+    const body : UpdateReceiptInput = await request.json(); 
     const receipt = await prisma.receipt.update(
         {
             where : {
