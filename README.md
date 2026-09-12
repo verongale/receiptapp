@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ReceiptApp
+
+ReceiptApp is a personal finance project I am building for my own everyday use.
+
+The idea is simple: I wanted to create a tool that I would actually use in my daily life, rather than building another project just for the sake of having something to put in a portfolio.
+
+For me, projects are one of the best ways to learn. When I build something that solves a real problem I have, I have a reason to understand the technology properly, make decisions about architecture, improve the user experience, and keep iterating on the product.
+
+> **This project is in its early stages.**
+>
+> It is a work in progress, but I care about it enough to share it publicly and document its development.
+
+## Why I'm Building It
+
+I enjoy creating software that has a practical purpose.
+
+ReceiptApp started from a personal need: having a simple and structured way to keep track of personal finances and expenses.
+
+Instead of relying on an existing solution, I decided to build my own. This allows me to experiment with technologies and architectural decisions while working on something that can become genuinely useful in my everyday life.
+
+The project is therefore both:
+
+* a **personal tool** I intend to use;
+* a **learning project** where I can experiment with modern web development;
+* an evolving project that I can continuously improve as I learn.
+
+## Current Status
+
+ReceiptApp is currently in the **early development stage**.
+
+The architecture and foundations are being developed first, with new features being added progressively.
+
+The project is not intended to represent a finished product yet. I am sharing it because I believe the development process itself is valuable and shows how I approach learning, experimentation, and problem solving.
+
+## Tech Stack
+
+* **Next.js**
+* **React**
+* **TypeScript**
+* **Prisma**
+* **SQL database**
+* **Tailwind CSS**
+
+## What I'm Exploring
+
+Through this project I am particularly interested in:
+
+* Component architecture
+* Type-safe development
+* Database modelling with Prisma
+* Data management
+* Application state
+* API and server-side logic
+* User interface design
+* Building features around real-world requirements
+* Making architectural decisions as the project grows
+
+## Project Structure
+
+```text
+/
+├── public/             # Static assets
+├── prisma/             # Database schema and Prisma configuration
+├── src/                # Application source code
+├── package.json
+├── next.config.*
+└── tsconfig.json
+```
 
 ## Getting Started
 
-First, run the development server:
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available locally at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Development Philosophy
 
-## Learn More
+I prefer learning by building.
 
-To learn more about Next.js, take a look at the following resources:
+Rather than creating isolated exercises or tutorials, I try to turn things I actually need into small software projects. This gives me the opportunity to encounter real constraints, make mistakes, rethink decisions, and understand why a particular solution works.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ReceiptApp is an example of this approach.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+It is intentionally being developed incrementally, and the architecture may evolve as the requirements become clearer and as my own understanding of the technologies improves.
 
-## Deploy on Vercel
+## Roadmap
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The roadmap will evolve together with the project.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Some areas I intend to explore include:
+
+* Expense and receipt management
+* Personal finance tracking
+* Data visualisation
+* Improved database architecture
+* Better filtering and organisation
+* Authentication and user management
+* Additional automation and integrations
+
+## Status
+
+🚧 **Work in progress — early development**
+
+This repository is public because I want to share the project and its evolution, not because it is finished.
+
+## Author
+
+**Veronica Galeazzo**
+
+Web Designer & Front-End Developer
+
+* Portfolio: https://www.veronicagaleazzo.it
+* GitHub: https://github.com/verongale
+* LinkedIn: https://www.linkedin.com/in/veronica-galeazzo-82299323a/

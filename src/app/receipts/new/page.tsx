@@ -4,7 +4,7 @@ import {useState} from "react";
 import { createReceipt } from "@/services/receiptService";
 import { CreateReceiptInput } from "@/types/CreateReceiptInput";
 import { CreateProductInput } from "@/types/CreateProductInput";
-import {useRouter} from "next/router";
+import { useRouter } from "next/navigation";
 
 export default function NewReceiptPage() {
     const router = useRouter();

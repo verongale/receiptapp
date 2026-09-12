@@ -1,6 +1,6 @@
 export type CreateProductInput = {
     name: string; 
-    unitPrice?: number;
+    unitPrice: number;
     total: number; 
     quantity: number; 
     codiceIva: string;

@@ -16,7 +16,15 @@ export async function POST(request: Request){
             discount : body.discount,
             imageUrl : body.imageUrl,
             products : {
-                create : []
+                create : body.products?.map((product)=>({
+                    name: product.name,
+                    unitPrice: product.unitPrice,
+                    total: product.total,
+                    quantity: product.quantity,
+                    codiceIva: product.codiceIva,
+                    discount: product.discount,
+
+                })) ?? [],
             },
             
         },
